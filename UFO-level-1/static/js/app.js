@@ -26,7 +26,7 @@ button.on("click", () => {
   var inputDate = inputFieldDate.property("value").trim();
 
   var findDate = dataSighting.filter(dataSighting => dataSighting.datetime === inputDate);
-  console.log(inputFieldDate)
+  // console.log(inputFieldDate)
 
   tbody.html("");
 
