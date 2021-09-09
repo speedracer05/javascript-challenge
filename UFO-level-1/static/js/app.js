@@ -5,33 +5,17 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 
-// START Table search
-$(document).ready(function() {
-  $(".search").keyup(function () {
-    var searchTerm = $(".search").val();
-    var listItem = $('.results tbody').children('tr');
-    var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
-    
-  $.extend($.expr[':'], {'containsi': function(elem, i, match, array){
-        return (elem.textContent || elem.innerText || '').toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
-    }
-  });
-    
-  $(".results tbody tr").not(":containsi('" + searchSplit + "')").each(function(e){
-    $(this).attr('visible','false');
-  });
+// Loop through data and log observation object and append one tble row
+sightings.forEach(sighting => {
+ 
+  var row = tbody.append("tr");
 
-  $(".results tbody tr:containsi('" + searchSplit + "')").each(function(e){
-    $(this).attr('visible','true');
-  });
-
-  var jobCount = $('.results tbody tr[visible="true"]').length;
-    $('.counter').text(jobCount + ' item');
-
-  if(jobCount == '0') {$('.no-result').show();}
-    else {$('.no-result').hide();}
-		  });
-});
-// END Table Search
-
+  row.append("td").text(sighting.datetime);
+  row.append("td").text(sighting.city);
+  row.append("td").text(sighting.state);
+  row.append("td").text(sighting.country);
+  row.append("td").text(sighting.shape);
+  row.append("td").text(sighting.durationMinutes);
+  row.append("td").text(sighting.comments);
 console.log(data)
+});
