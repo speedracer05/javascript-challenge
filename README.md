@@ -26,6 +26,8 @@ A basic HTML page was created, showing the data that was extracted, and presente
 
 
 <img align="left" src="https://github.com/speedracer05/javascript-challenge/blob/main/UFO-level-1/static/images/javaScrpit_applicaton.png">
+<br>
+
 
 ## Technology
 `JavaScript`
