@@ -56,7 +56,7 @@ body {
 }
 
 /* Adding styles to the aside and filter form */
-/* .ufo-form {
+.ufo-form {
   margin-top: 50px;
 }
 
@@ -84,7 +84,7 @@ select {
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
   min-width: 70px;
-} */
+}
 
 
 /* START Table and search for ufo data table */
