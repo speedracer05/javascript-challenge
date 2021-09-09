@@ -54,16 +54,16 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)
 
+### What was done
+1. Added responsive tables to allow table to be scrolled horizontally. The table is responsive across all viewports
+2. Added searching function to the tables
+
+
+### Sources
+[Bootstrap Table Search](https://mdbootstrap.com/docs/b4/jquery/tables/search/)
 - - -
 
 ## Rubric
 
 [Unit 14 Rubric - JavaScript Homework - JavaScript and DOM Manipulation](https://docs.google.com/document/d/1KWNS-xCwYBONjvlrIz4zyGkcUu0mP2kpMQh6qj0hKf8/edit?usp=sharing)
 
-- - -
-
-**Good luck!**
-
-- - -
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
