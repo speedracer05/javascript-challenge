@@ -18,7 +18,24 @@ var tbody = d3.select("tbody");
 
 // Create Listener to search through data on HTML page
 // Reference assignment #13 wk 16 #04
-var  inputDate = inputFieldDate.property("value").trim();
+var button = d3.select("#filter-btn");
+button.on("click", () => {
 
-var findDate = dataSighting.filter(dataSighting => dataSighting.datetime === inputDate);
-console.log(inputFieldDate)
+  d3.event.preventDefault();
+  
+  var inputDate = inputFieldDate.property("value").trim();
+
+  var findDate = dataSighting.filter(dataSighting => dataSighting.datetime === inputDate);
+  console.log(inputFieldDate)
+
+  tbody.html("");
+
+  let response = {
+    findDate
+  }
+
+  if(response.findDate.length !== 0) {
+    addData(findDate);
+  }
+
+})
