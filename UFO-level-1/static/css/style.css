@@ -6,13 +6,10 @@
 html,
 body {
   height: 100%;
-  padding: 20px 20px;
+  padding: 0;
   margin: 0;
 }
 
-.table table-hover table-bordered results {
-  font-size: large;
-}
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
@@ -85,25 +82,6 @@ select {
 #table-area th:nth-child(6) {
   min-width: 70px;
 }
-
-
-/* START Table and search for ufo data table */
-/*=============================================*/
-.results tr[visible='false'],
-.no-result{
-  display:none;
-}
-
-.results tr[visible='true']{
-  display:table-row;
-}
-
-.counter{
-  padding:8px; 
-  color:#ccc;
-}
-/* END Table and search for ufo data table */
-/*=============================================*/
 
 .loader {
   margin-top: 50px;
@@ -212,11 +190,6 @@ select {
     animation: smaller-title 1.2s forwards linear;
   }
 }
-
-/* .brlarge {
-  display: block;
-  margin-bottom: 8em;
-} */
 
 /* keyframe animations which will be used to animate the title */
 @keyframes title {

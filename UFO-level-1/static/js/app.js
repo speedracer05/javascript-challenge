@@ -6,16 +6,10 @@ var tbody = d3.select("tbody");
 
 
 // Loop through data and log observation object and append one tble row
-sightings.forEach(sighting => {
- 
-  var row = tbody.append("tr");
-
-  row.append("td").text(sighting.datetime);
-  row.append("td").text(sighting.city);
-  row.append("td").text(sighting.state);
-  row.append("td").text(sighting.country);
-  row.append("td").text(sighting.shape);
-  row.append("td").text(sighting.durationMinutes);
-  row.append("td").text(sighting.comments);
-console.log(data)
-});
+var addData = (dataInput) => {
+  dataSighting.forEach(sightings => {
+      var row = $tbody.append("tr");
+      columns.forEach(column => row.append("td").text(sightings[column])
+      )
+  });
+}
