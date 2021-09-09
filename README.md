@@ -7,6 +7,7 @@ WAKE UP SHEEPLE! This challenge project collected 'eye-witness reports' that ale
 -   [Description](#description)
 -   [Installation and Deployment](#installation-and-deployment)
 -   [D3 Visualization](#d3-visualization)
+-   [Technology](#technology)
 -   [Resources](#resources)
 -   [Contact](#contact)
 
@@ -24,12 +25,27 @@ WAKE UP SHEEPLE! This challenge project collected 'eye-witness reports' that ale
 A basic HTML page was created, showing the data that was extracted, and presented in table form.
 
 
-
-
 <img align="left" src="https://github.com/speedracer05/javascript-challenge/blob/main/UFO-level-1/static/images/javaScrpit_applicaton.png">
 
+## Technology
+`JavaScript`
+`HTML`
+`CSS`
+`D3.js`
 
-#### 
+## Development Notes
+I reviewed the dataset saved as a `data.js` file. The data represented an array of objects, representing detail sighting information; time, location, shape of event, duration of event, and comments provided by the 'observer'. A forEach statement was used to find each object and appended to a table. Each object has it's own cell.
+
+An event Listner, in the form of a button, was created for the Filter Button. The event is triggered when the button was selected. Curently the table search is limited to the date field. I hope to add a more dynamic filter to search all 5 input fields in the near future.
+
+## Resources
+1. Future implementation resources
+  - [Responsive Tables](https://codepen.io/gumetis/pen/OJPNxwy)
+3. [Searchable Tables](https://codepen.io/adobewordpress/pen/gbewLV)
+
+
+## Contact
+[John Chan](https://github.com/speedracer05)
 
 
 
